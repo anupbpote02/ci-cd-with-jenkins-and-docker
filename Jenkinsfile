@@ -14,11 +14,7 @@ pipeline{
                 
                        }
                                             }
-               stage ('docker tag image'){
-                  steps{
-                       sh 'docker tag myimage6:latest anupbpote/myimage6:latest'
-                       }
-                                        }
+              
                stage ('docker push image'){
                   steps{
                        sh 'docker push anupbpote/myimage6:latest'
