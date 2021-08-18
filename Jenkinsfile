@@ -9,6 +9,7 @@ pipeline{
      stage ('docker build image') { 
         steps {  
                  sh 'sudo docker login -u anupbpote -p @Nup_2499'
+                 sh 'sudo -S <cmd>'
                  sh 'sudo docker build -t anupbpote/myimage6 . '
                 }
             }
