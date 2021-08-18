@@ -9,7 +9,7 @@ pipeline{
      stage ('docker build image') { 
         steps {  
                  sh 'docker login -u anupbpote -p @Nup_2499'
-                 sh 'docker build -t anupbpote/myimage5 . '
+                 sh 'docker build -t anupbpote/myimage6 . '
                 }
             }
      }
